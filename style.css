@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Orange: #fb7413;
+  --White: #ffffff;
+  --Light-Grey: #959eac;
+  --Medium-Grey: #7c8798;
+  --Dark-Blue: #252d37;
+  --Very-Dark-Blue: #121417;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: var(--Very-Dark-Blue);
+  color: var(--White);
+}
+
+main,
+.message {
+  margin: 150px auto 0;
+  width: 320px;
+  border-radius: 10px;
+  padding: 25px;
+  background-image: linear-gradient(to bottom,
+      var(--Dark-Blue),
+      #181f29 90%);
+}
+
+main img {
+  background-color: #2c3641;
+  border-radius: 50%;
+  padding: 10px;
+  width: 35px;
+  margin-bottom: 10px;
+
+}
+
+main p {
+  color: var(--Light-Grey);
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+main .rates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+main .rates button {
+  background-color: #2c3641;
+  color: var(--Light-Grey);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: none;
+}
+
+main .rates .active {
+  background-color: var(--Medium-Grey);
+  color: var(--White);
+}
+
+main button {
+  background-color: var(--Orange);
+  width: 100%;
+  color: var(--White);
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+main .rates button:hover {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+.message {
+  text-align: center;
+  padding: 25px 0;
+  display: none;
+}
+
+.message p:nth-of-type(1) {
+  color: var(--Orange);
+  background-color: #2c3641;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px auto;
+}
+
+.message p:nth-of-type(2) {
+  color: var(--Medium-Grey);
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 25px;
+}
